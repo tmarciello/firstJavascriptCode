@@ -25,6 +25,9 @@ function caseInSwitch(val) {
     case 4:
       answer = "delta";
       break;
+    default:
+      answer = "something else";
+      break;
   }
   
   // Only change code above this line  
