@@ -1,4 +1,5 @@
 /*
+ASSIGNMENT
 
 You will write a card counting function. 
 It will receive a card parameter and increment or decrement the global count variable according to the card's value (see table). 
@@ -11,17 +12,13 @@ var count = 0;
 
 function cc(card) {
   // Only change code below this line
-  switch (card) {
+  switch(card) {
     case 2:
     case 3:
     case 4:
     case 5:
     case 6:
       count++;
-      break;
-    case 7:
-    case 8:
-    case 9:
       break;
     case 10:
     case "J":
@@ -31,16 +28,12 @@ function cc(card) {
       count--;
       break;
   }
-  
-  var response = "";
-  
-  if (count >= 1) {
-    response = "Bet";
+
+  if(count > 0) {
+    return count + " Bet";
   } else {
-    response = "Hold";
+    return count + " Hold";
   }
-  
-  return count + " " + response;
   // Only change code above this line
 }
 
